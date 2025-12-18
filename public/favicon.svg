@@ -1,0 +1,63 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main gradient -->
+    <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B84BFF"/>
+      <stop offset="100%" stop-color="#2F6BFF"/>
+    </linearGradient>
+
+    <!-- Subtle inner layer gradient -->
+    <linearGradient id="innerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8E3BFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#355CFF" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="#0B0F1A"/>
+
+  <!-- Main speech bubble / P shape -->
+  <path
+    d="
+      M240 210
+      L460 210
+      C560 210 610 260 610 360
+      C610 460 560 510 460 510
+      L360 510
+      L300 580
+      C290 590 270 585 270 565
+      L270 510
+      L240 510
+      Z
+    "
+    fill="url(#bubbleGradient)"
+  />
+
+  <!-- Inner folded shape -->
+  <path
+    d="
+      M300 260
+      L460 260
+      C520 260 560 300 560 360
+      C560 420 520 460 460 460
+      L350 460
+      L300 510
+      Z
+    "
+    fill="url(#innerGradient)"
+    opacity="0.9"
+  />
+
+  <!-- Brand text -->
+  <text
+    x="400"
+    y="680"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-size="64"
+    font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+    font-weight="600"
+  >
+    StreamChat
+  </text>
+</svg>
